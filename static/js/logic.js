@@ -61,7 +61,6 @@ function createFeatures(earthquakeData) {
             radius: radiusMag(feature.properties.mag),
             }).addTo(myMap);
         
-        
         layer.bindPopup("<h3>" + feature.properties.place + ` | Magnitude: ${feature.properties.mag}` +
 
           "</h3><hr><p>" + new Date(feature.properties.time) + "</p>" +
